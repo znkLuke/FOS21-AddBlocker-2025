@@ -19,8 +19,6 @@ namespace AddBlocker
             Application.ApplicationExit += (s, e) => Form1.TryRestoreProxyOnExit();
             AppDomain.CurrentDomain.ProcessExit += (s, e) => Form1.TryRestoreProxyOnExit();
             Application.Run(new Form1());
-
-            //TWH2
         }
     }
 }
